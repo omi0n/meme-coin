@@ -65,7 +65,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main
 async def main():
-    application = Application.builder().token("INSERISCI_IL_TUO_TOKEN").build()
+    application = Application.builder().token("8113756420:AAGQaBaY8GrnxUZ7YKLkQZtjHYlpEI3jkB0").build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CallbackQueryHandler(button_handler))
     application.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, new_member))
